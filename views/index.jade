@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h2 The Way We Should Consider Jade
+  p Jade is a template engine that makes it a lot nicer and easier to construct html files. Instead of using tags to specify the beginning and the end of a particular element or node, the jade engine just assumes that the tags are what the very first thing is at the very beginning of a line. Then whatever follows, is its contents.
+
+  h3= user
+  - var spouse = 'Shanon';
+  p Is Learning the Jade template engine. Is #{user} really gaining the confidence he needs to succeed? #{spouse} thinks he should have more confidence.
